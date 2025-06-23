@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Speech API</title>
+    <title>Speeh_BLabla-Translate</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -12,12 +12,14 @@
 <body>
 
     <div class="container">
-        <h1>Interface Vocale</h1>
+        <h1>Interface Traduction</h1>
 
         <div class="box">
-            <h2>Reconnaissance Vocale</h2>
+            <h2><img class="mic" src="/assets/alien.svg" alt="" srcset="">Reconnaissance Vocale</h2>
             <p>Cliquez sur le bouton et parlez. Le texte reconnu apparaîtra ci-dessous.</p>
-            <button id="startButton">🎙️ Démarrer l'écoute</button>
+            <button id="startButton"><img class="mic" src="./assets/micro.svg" alt="" srcset=""></button>
+            <button id="speakTranslatedButton" style="margin-left:0.5em;vertical-align:top;"><img class="mic"src="assets\speaker.svg" alt="">Lire la
+                traduction</button>
             <p><strong>Résultat :</strong></p>
             <div id="result" class="result-box">En attente...</div>
 
@@ -131,8 +133,7 @@
             </select>
             <label for="translatedText">Traduction :</label>
             <textarea id="translatedText" rows="2" readonly style="width:100%;margin-top:0.5em;"></textarea>
-            <button id="speakTranslatedButton" style="margin-left:0.5em;vertical-align:top;">🔊 Lire la
-                traduction</button>
+            
         </div>
 
         <div class="box">
@@ -140,9 +141,9 @@
             <p>Écrivez un texte et cliquez sur "Lire le texte".</p>
             <textarea id="textToSpeak"
                 rows="4">Bonjour tout le monde ! Ceci est un test de la synthèse vocale.</textarea>
-            <label for="voiceSelect">Choisir une voix :</label>
+            <label for="voiceSelect"> Choisir une voix :</label>
             <select id="voiceSelect"></select>
-            <button id="speakButton">🔊 Lire le texte</button>
+            <button id="speakButton"><img class="mic" src="assets\speaker.svg" alt="">Lire le texte</button>
         </div>
 
     </div>
